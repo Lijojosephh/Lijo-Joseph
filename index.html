@@ -1,0 +1,97 @@
+<html>
+    <head>
+        <title>Cognifyz Internships</title>  
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+        <style type="text/css">
+          
+           
+            body {
+                background-color: #6fa17c;
+                color: rgb(233, 231, 235);
+                size: 1em;
+            }
+            .user-card {
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 15px;
+            margin: 10px 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            }
+            </style>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Lijo joseph</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <br><br>
+        <h1><u><center>Interactive Website Development</center></u></h1><br>
+        <p>  An interactive website is a website that encourages users to interact with it through various elements. These elements can include videos, animations, and forms. Interactive websites are designed to keep users engaged and communicating with the site.</p>
+        <center><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLUMImJXeN77eRkzqtKTD5S-MMOReNlBFtB4gT2sDdN9OG7xSIGZzNu7PY6I27Lk7AJcY&usqp=CAU" width="200px" height="200px"\> </center>
+  <main class="container">
+    <div class="card"> 1</div>
+    <div class="card">2</div>
+    <div class="card">3</div>
+    <div class="card"> 4</div>
+  </main>
+  <center><button id="changeColorButton">Click Here </center></button>
+  <div id="userContainer"></div>
+    <br><br>
+    
+    
+
+    <!-- Form Section -->
+    <div class="container d-flex justify-content-center align-items-center vh-100">
+        <div class="card p-4 shadow-sm" style="width: 100%; max-width: 400px;">
+            <form id="userForm">
+                <h1 class="text-center mb-4">Sign Up</h1>
+
+                <div class="row mb-3">
+                    <label for="username" class="form-label">Username:</label>
+                    <input type="text" id="username" name="username" class="form-control" placeholder="Enter your username" required>
+                </div>
+
+                <div class="row mb-3">
+                    <label for="email" class="form-label">Email:</label>
+                    <input type="email" id="email" name="email" class="form-control" placeholder="Enter your email" required>
+                </div>
+
+                <div class="row mb-3">
+                    <label for="password" class="form-label">Password:</label>
+                    <input type="password" id="password" name="password" class="form-control" placeholder="Enter your password" required>
+                </div>
+
+                <div class="row mb-3">
+                    <label for="confirmPassword" class="form-label">Confirm Password:</label>
+                    <input type="password" id="confirmPassword" name="confirmPassword" class="form-control" placeholder="Confirm your password" required>
+                </div>
+
+                <button type="submit" class="btn btn-primary w-100">Submit</button>
+            </form>
+            <div id="errorMessage" class="text-danger text-center mt-3"></div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-white text-center py-3 mt-auto">
+        <p class="mb-0">&copy; 2025 My Website. All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+    
+</body>
+</html>
