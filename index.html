@@ -1,97 +1,263 @@
-<html>
-    <head>
-        <title>Cognifyz Internships</title>  
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="styles.css">
-        <style type="text/css">
-          
-           
-            body {
-                background-color: #6fa17c;
-                color: rgb(233, 231, 235);
-                size: 1em;
-            }
-            .user-card {
-            border: 1px solid #ccc;
-            border-radius: 8px;
-            padding: 15px;
-            margin: 10px 0;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            }
-            </style>
-    </head>
-    <body>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">Lijo joseph</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <br><br>
-        <h1><u><center>Interactive Website Development</center></u></h1><br>
-        <p>  An interactive website is a website that encourages users to interact with it through various elements. These elements can include videos, animations, and forms. Interactive websites are designed to keep users engaged and communicating with the site.</p>
-        <center><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLUMImJXeN77eRkzqtKTD5S-MMOReNlBFtB4gT2sDdN9OG7xSIGZzNu7PY6I27Lk7AJcY&usqp=CAU" width="200px" height="200px"\> </center>
-  <main class="container">
-    <div class="card"> 1</div>
-    <div class="card">2</div>
-    <div class="card">3</div>
-    <div class="card"> 4</div>
-  </main>
-  <center><button id="changeColorButton">Click Here </center></button>
-  <div id="userContainer"></div>
-    <br><br>
-    
-    
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1">
+		
+		<title>Movie Review</title>
 
-    <!-- Form Section -->
-    <div class="container d-flex justify-content-center align-items-center vh-100">
-        <div class="card p-4 shadow-sm" style="width: 100%; max-width: 400px;">
-            <form id="userForm">
-                <h1 class="text-center mb-4">Sign Up</h1>
+		<!-- Loading third party fonts -->
+		<link href="http://fonts.googleapis.com/css?family=Roboto:300,400,700|" rel="stylesheet" type="text/css">
+		<link href="fonts/font-awesome.min.css" rel="stylesheet" type="text/css">
 
-                <div class="row mb-3">
-                    <label for="username" class="form-label">Username:</label>
-                    <input type="text" id="username" name="username" class="form-control" placeholder="Enter your username" required>
-                </div>
+		<!-- Loading main css file -->
+		<link rel="stylesheet" href="style.css">
+		
+		<!--[if lt IE 9]>
+		<script src="js/ie-support/html5.js"></script>
+		<script src="js/ie-support/respond.js"></script>
+		<![endif]-->
 
-                <div class="row mb-3">
-                    <label for="email" class="form-label">Email:</label>
-                    <input type="email" id="email" name="email" class="form-control" placeholder="Enter your email" required>
-                </div>
+	</head>
 
-                <div class="row mb-3">
-                    <label for="password" class="form-label">Password:</label>
-                    <input type="password" id="password" name="password" class="form-control" placeholder="Enter your password" required>
-                </div>
 
-                <div class="row mb-3">
-                    <label for="confirmPassword" class="form-label">Confirm Password:</label>
-                    <input type="password" id="confirmPassword" name="confirmPassword" class="form-control" placeholder="Confirm your password" required>
-                </div>
+	<body>
+		
 
-                <button type="submit" class="btn btn-primary w-100">Submit</button>
-            </form>
-            <div id="errorMessage" class="text-danger text-center mt-3"></div>
-        </div>
-    </div>
+		<div id="site-content">
+			<header class="site-header">
+				<div class="container">
+					<a href="index.html" id="branding">
+						<img src="images/logo.png" alt="" class="logo">
+						<div class="logo-copy">
+							<h1 class="site-title">Lijo&Co</h1>
+							<small class="site-description">Movie Review</small>
+						</div>
+					</a> <!-- #branding -->
 
-    <!-- Footer -->
-    <footer class="bg-primary text-white text-center py-3 mt-auto">
-        <p class="mb-0">&copy; 2025 My Website. All Rights Reserved.</p>
-    </footer>
+					<div class="main-navigation">
+						<button type="button" class="menu-toggle"><i class="fa fa-bars"></i></button>
+						<ul class="menu">
+							<li class="menu-item current-menu-item"><a href="index.html">Home</a></li>
+							<li class="menu-item"><a href="about.html">About</a></li>
+							<li class="menu-item"><a href="review.html">Movie reviews</a></li>
+							<li class="menu-item"><a href="joinus.html">Join us</a></li>
+							<li class="menu-item"><a href="contact.html">Contact</a></li>
+						</ul> <!-- .menu -->
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="script.js"></script>
-    
-</body>
+						<form action="#" class="search-form">
+							<input type="text" placeholder="Search...">
+							<button><i class="fa fa-search"></i></button>
+						</form>
+					</div> <!-- .main-navigation -->
+
+					<div class="mobile-navigation"></div>
+				</div>
+			</header>
+			<main class="main-content">
+				<div class="container">
+					<div class="page">
+						<div class="row">
+							<div class="col-md-9">
+								<div class="slider">
+									<ul class="slides">
+										<li><a href="#"><img src="https://www.team-bhp.com/forum/attachments/shifting-gears/148549d1245143725-english-movies-thread-no-spoilers-please-mongol2.jpg" alt="Slide 1"></a></li>
+										<li><a href="#"><img src="https://static.toiimg.com/photo/msid-65501276/65501276.jpg?175303" alt="Slide 2"></a></li>
+										<li><a href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSsM05mS-4VQWXvNQkhLv5doswE4Pg_jw6OQ&s" alt="Slide 3"></a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="col-md-3">
+								<div class="row">
+									<div class="col-sm-6 col-md-12">
+										<div class="latest-movie">
+											<a href="#"><img src="https://assets.gadgets360cdn.com/pricee/assets/product/202501/In_the_Lost_Lands_Poster_1_1737356671.jpg" alt="Movie 1"></a>
+										</div>
+									</div>
+									<div class="col-sm-6 col-md-12">
+										<div class="latest-movie">
+											<a href="#"><img src="https://twinchaptertrading.mta4.sitegiant.cc/image/twinchaptertrading/image/cache/data/all_product_images/product-9944/MV5BZmRjODgyMzEtMzIxYS00OWY2LTk4YjUtMGMzZjMzMTZiN2Q0XkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_-1500x2222.jpg" alt="Movie 2"></a>
+										</div>	
+									</div>
+									<div class="col-sm-6 col-md-12">
+										<div class="latest-movie">
+											<a href="#"><img src="https://m.media-amazon.com/images/M/MV5BZDMyYWU4NzItZDY0MC00ODE2LTkyYTMtMzNkNDdmYmFhZDg0XkEyXkFqcGc@._V1_.jpg" alt="Movie 2"></a>
+										</div>	
+									</div>	
+								</div>
+							</div>
+						</div> <!-- .row -->
+						<div class="row">
+							<div class="col-sm-6 col-md-3">
+								<div class="latest-movie">
+									<a href="#"><img src="https://i.pinimg.com/236x/0f/d2/cf/0fd2cfc6fa40b66ae2102fdd0b505cbb.jpg" alt="Movie 3"></a>
+								</div>
+							</div>
+							<div class="col-sm-6 col-md-3">
+								<div class="latest-movie">
+									<a href="#"><img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC/et00383498-xwqdamsbsu-portrait.jpg" alt="Movie 4"></a>
+								</div>
+							</div>
+							<div class="col-sm-6 col-md-3">
+								<div class="latest-movie">
+									<a href="#"><img src="https://qqcdnpictest.mxplay.com/pic/6bf21d9f0b2c598e6137cb0b01b598a1/en/2x3/312x468/test_pic1739453094646.webp" alt="Movie 5"></a>
+								</div>
+							</div>
+							<div class="col-sm-6 col-md-3">
+								<div class="latest-movie">
+									<a href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTu3Fwk9eaPAVAC_Kw0Du4SjHcbRKzZAZ9MHg&s" alt="Movie 6"></a>
+								</div>
+							</div>
+						</div> <!-- .row -->
+						
+						<div class="row">
+							<div class="col-md-4">
+								<h2 class="section-title">December premiere</h2>
+								<p>Satrting at Morning 6:00AM. Evreyone come and Join premiere Shows.Very Intresting Movies Are Loaded.</p>
+								<ul class="movie-schedule">
+									<li>
+										<div class="date">16/12</div>
+										<h2 class="entry-title"><a href="#">Kraven the Hunter</a></h2>
+									</li>
+									<li>
+										<div class="date">18/12</div>
+										<h2 class="entry-title"><a href="#">Nosferatu</a></h2>
+									</li>
+									<li>
+										<div class="date">20/12</div>
+										<h2 class="entry-title"><a href="#">The Six Triple Eight</a></h2>
+									</li>
+									<li>
+										<div class="date">22/12</div>
+										<h2 class="entry-title"><a href="#">Mufasa: The Lion King</a></h2>
+									</li>
+								</ul> <!-- .movie-schedule -->
+							</div>
+							<div class="col-md-4">
+								<h2 class="section-title">November premiere</h2>
+								<p>Opening in Morning 7:00AM. Last Month premier shows Watch It guys Now Available On Movies Website</p>
+								<ul class="movie-schedule">
+									<li>
+										<div class="date">05/11</div>
+										<h2 class="entry-title"><a href="#">Elevation</a></h2>
+									</li>
+									<li>
+										<div class="date">16/11</div>
+										<h2 class="entry-title"><a href="#">Paddington in Peru</a></h2>
+									</li>
+									<li>
+										<div class="date">20/11</div>
+										<h2 class="entry-title"><a href="#">The Piano Lesson</a></h2>
+									</li>
+									<li>
+										<div class="date">25/11</div>
+										<h2 class="entry-title"><a href="#">The Merry Gentlemen</a></h2>
+									</li>
+								</ul> <!-- .movie-schedule -->
+							</div>
+							<div class="col-md-4">
+								<h2 class="section-title">October premiere</h2>
+								<p>Show Time Morning 8:00AM October Premier Show. Watch The Unlimited New Movie Shows With Your Friends</p>
+								<ul class="movie-schedule">
+									<li>
+										<div class="date">05/10</div>
+										<h2 class="entry-title"><a href="#">Venom: The Last Dance</a></h2>
+									</li>
+									<li>
+										<div class="date">11/10</div>
+										<h2 class="entry-title"><a href="#">Gladiator II</a></h2>
+									</li>
+									<li>
+										<div class="date">15/10</div>
+										<h2 class="entry-title"><a href="#">Lonely Planet</a></h2>
+									</li>
+									<li>
+										<div class="date">22/10</div>
+										<h2 class="entry-title"><a href="#">That Christmas</a></h2>
+									</li>
+								</ul> <!-- .movie-schedule -->
+							</div>
+						</div>
+					</div>
+				</div> <!-- .container -->
+			</main>
+			<footer class="site-footer">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-2">
+							<div class="widget">
+								<h3 class="widget-title">About Us</h3>
+								<p>We Just Started For a Website for Movie Review. For Your support Need us.We can Make A huge Servers and Enjoy Evreyone </p>
+							</div>
+						</div>
+						<div class="col-md-2">
+							<div class="widget">
+								<h3 class="widget-title">Recent Review</h3>
+								<ul class="no-bullet">
+									<li>Action Movies</li>
+									<li>Crime Movie</li>
+									<li>Thriller Movie</li>
+									<li>Horror Movie</li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-md-2">
+							<div class="widget">
+								<h3 class="widget-title">Help Center</h3>
+								<ul class="no-bullet">
+									<li>Self-Service</li>
+									<li>Knowledge Base</li>
+									<li>User-Friendly</li>
+									<li>Accessibility</li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-md-2">
+							<div class="widget">
+								<h3 class="widget-title">Join Us</h3>
+								<ul class="no-bullet">
+									<li>India</li>
+									<li>America</li>
+									<li>Dubai</li>
+									<li>Uk</li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-md-2">
+							<div class="widget">
+								<h3 class="widget-title">Social Media</h3>
+								<ul class="no-bullet">
+									<li>Facebook</li>
+									<li>Twitter</li>
+									<li>Google+</li>
+									<li>Pinterest</li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-md-2">
+							<div class="widget">
+								<h3 class="widget-title">Newsletter</h3>
+								<form action="#" class="subscribe-form">
+									<input type="text" placeholder="Email Address">
+								</form>
+							</div>
+						</div>
+					</div> <!-- .row -->
+
+					<div class="colophon">Copyright 2014 Lijo&Co, Designed by Lijo. All rights reserved</div>
+				</div> <!-- .container -->
+
+			</footer>
+		</div>
+		<!-- Default snippet for navigation -->
+		
+
+
+		<script src="js/jquery-1.11.1.min.js"></script>
+		<script src="js/plugins.js"></script>
+		<script src="js/app.js"></script>
+		
+	</body>
+
 </html>
